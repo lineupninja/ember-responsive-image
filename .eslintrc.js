@@ -28,7 +28,8 @@ module.exports = {
         'blueprints/*/index.js',
         'config/**/*.js',
         'tests/dummy/config/**/*.js',
-        'broccoli-image-writer.js'
+        'broccoli-image-writer.js',
+        '.eslintrc.js'
       ],
       excludedFiles: [
         'addon/**',
@@ -67,7 +68,8 @@ module.exports = {
       },
       plugins: ['node'],
       rules: Object.assign({}, require('eslint-plugin-node').configs.recommended.rules, {
-        'ember/no-global-jquery': 'off'
+        'ember/no-global-jquery': 'off',
+        'ember/no-jquery': 'off'
       })
     },
   ]
